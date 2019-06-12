@@ -5,7 +5,7 @@ const protoTubo = requireTubo.singletonTubo().get();
 
 class Packing {
     constructor() {
-        this.envoltorio = [protoCaja, protoTubo];
+        this.envoltorio = [protoCaja.envoltorio, protoTubo.envoltorio];
     }
 }
 
@@ -22,4 +22,4 @@ exports.singletonPacking = function() {
 	return singletonPacking();
 };
 
-// console.log(this.envoltorio = [protoCaja, protoTubo]);
+// console.log(this.envoltorio = [protoCaja.envoltorio, protoTubo.envoltorio]);

@@ -1,7 +1,7 @@
 class Smiggles {
     constructor() {
-        this.nombre = "Eyeholes";
-        this.pvp = 25.0;
+        this.nombre = "Smiggles";
+        this.pvp = 50.0;
     }
 }
 
