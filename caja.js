@@ -1,6 +1,5 @@
 class Caja {
     constructor() {
-        this.caja = new Caja();
         this.envoltorio = "Caja";
     }
 }
