@@ -7,9 +7,9 @@ const protoCereales = requireCereales.singletonCereales().get();
 
 class Item {
 	constructor(nombre, empaquetado, pvp) {
-        this.nombre = nombre;
-        this.empaquetado = empaquetado;
-        this.pvp = pvp;
+        this.nombre = [protoBebida.toString, protoCereales.toString];
+        this.empaquetado = protoBebida.empaquetado, protoCereales.empaquetado;
+        this.pvp = [protoBebida.pvp, protoCereales.pvp];
 	}
 }
 

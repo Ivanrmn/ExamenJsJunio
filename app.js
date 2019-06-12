@@ -8,17 +8,16 @@ var requireFleebJuice = require('./fleebJuice');
 var requireTurbulentJuice = require('./turbulentJuice');
 var requireEyeholes = require('./eyeholes');
 var requireSmiggles = require('./smiggles');
-var requireItem = require('./item');
-const protoItem = requireItem.singletonItem().get();
+var requireDesayuno = require('./desayuno');
+const protoDesayuno = requireDesayuno.singletonDesayuno().get();
 const protoEyeholes = requireEyeholes.singletonEyeholes().get();
 const protoSmiggles = requireSmiggles.singletonSmiggles().get();
 const protoFleebJuice = requireFleebJuice.singletonFleebJuice().get();
 const protoTurbulentJuice = requireTurbulentJuice.singletonTurbulentJuice().get();
 
 console.log("\nNo abras la caja de Eyeholes!");
-console.log(protoItem);
-console.log(protoItem);
-console.assert((protoSmiggles.pvp + protoFleebJuice.pvp) == 55);
+console.log(protoDesayuno);
+console.assert((protoEyeholes.pvp + protoTurbulentJuice.pvp) == 55);
 console.log("Precio pedido: " + (protoEyeholes.pvp + protoTurbulentJuice.pvp));
 
 /**
@@ -27,8 +26,7 @@ console.log("Precio pedido: " + (protoEyeholes.pvp + protoTurbulentJuice.pvp));
 		
 //Desayuno smigDes = FastBreakTruck.prepararSmiggles();
 console.log("\nSmiggles per als nins!");
-console.log(protoItem);
-console.log(protoItem);
+console.log(protoDesayuno);
 console.assert((protoSmiggles.pvp + protoFleebJuice.pvp) == 85);
 console.log("Precio pedido: " + (protoSmiggles.pvp + protoFleebJuice.pvp));
 

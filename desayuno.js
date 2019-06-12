@@ -4,8 +4,9 @@ const protoItem = requiteItem.singletonItem().get();
 
 class Desayuno {
 	constructor(coste) {
-        this.mostrarItems = protoItem;
-        this.coste = coste;
+		this.mostrarItems = protoItem.nombre;
+		this.mostrarEmpaquetado = protoItem.empaquetado;
+        this.precio = protoItem.pvp;
 	}
 	mostrarItems() {
 		for (i = 0; i< protoItem.lenght; i++) {

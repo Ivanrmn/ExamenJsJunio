@@ -1,7 +1,5 @@
 var requireSmiggles = require('./smiggles');
 var requireEyeholes = require('./eyeholes');
-var requirePacking = require('./packing');
-const protoPacking = requirePacking.singletonPacking().get();
 const protoSmiggles = requireSmiggles.singletonSmiggles().get();
 const protoEyeholes = requireEyeholes.singletonEyeholes().get();
 
@@ -9,6 +7,7 @@ class Cereales {
     constructor(nombre, pvp) {
         this.empaquetado = "Caja";
 		this.toString = [nombre = protoSmiggles.nombre , pvp = protoSmiggles.pvp, nombre = protoEyeholes.nombre, pvp = protoEyeholes.pvp];
+		this.pvp = [protoEyeholes.pvp, protoSmiggles.pvp];
     }
 }
 
