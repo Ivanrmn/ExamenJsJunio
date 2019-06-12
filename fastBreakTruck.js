@@ -21,6 +21,11 @@ FastBreakTruck.prototype.prepararSmiggles = function() {
     return Object.create(this.prepararSmiggles);
 };
 
+FastBreakTruck.prototype.incluirJuguete = function(eyeDes) {
+    this.incluirJuguete = singletonDesayuno.singletonDesayuno().get();
+    return Object.create(this.incluirJuguete);
+};
+
 function singletonFastBreakTruck() {
 	var fastBreakTruck = new FastBreakTruck();
 	return {
