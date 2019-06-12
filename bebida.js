@@ -6,10 +6,10 @@ const protoFleebJuice = requireFleebJuice.singletonFleebJuice().get();
 const protoTurbulentJuice = requireTurbulentJuice.singletonTurbulentJuice().get();
 
 class Bebida {
-    constructor() {
-        this.empaquetado = protoPacking;
-        this.toString = [protoFleebJuice, protoTurbulentJuice];
-
+    constructor(nombre, pvp) {
+		this.empaquetado = "Tubo";
+		if (nombre == "FleebJuice") {}
+        this.toString = [nombre = protoFleebJuice.nombre , pvp = protoFleebJuice.pvp] || [nombre = protoTurbulentJuice.nombre, pvp = protoTurbulentJuice.pvp];
     }
 }
 

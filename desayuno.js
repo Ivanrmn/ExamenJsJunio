@@ -1,11 +1,23 @@
+var requiteItem = require('./item');
+const protoItem = requiteItem.singletonItem().get();
+
+
 class Desayuno {
-	constructor() {
-        this.desayuno = new Desayuno;
-        this.mostrarItems = '';
-        this.coste = 0,0;
+	constructor(coste) {
+        this.mostrarItems = protoItem;
+        this.coste = coste;
+	}
+	mostrarItems() {
+		for (i = 0; i< protoItem.lenght; i++) {
+			console.log(protoItem[i]);
+		}
 	}
 	getCoste() {
-		return this.coste;
+		var precioTotal = 0.0;
+		for (i = 0; i< protoItem.lenght; i++) {
+			var precioTotal = precioTotal + protoItem[i];
+		}
+		return precioTotal;
 	}
 }
 
